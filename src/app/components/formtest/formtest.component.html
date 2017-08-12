@@ -1,0 +1,10 @@
+<form action="" #login="ngForm">
+    <label for="userName">用户名：</label>
+    <input name="userName" required ngModel>
+
+    <input type="submit" [disabled]="!login.valid" value="登录">
+</form>
+<p>login name value: {{ login.value }}</p>
+<p>login name valid: {{ login.valid }}</p>
+<p>userName name value: {{ userName.value }}</p>
+<p>userName name valid: {{ userName.valid }}</p>
